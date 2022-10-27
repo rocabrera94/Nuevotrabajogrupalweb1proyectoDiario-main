@@ -1,0 +1,472 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(185, 185, 185);
+}
+h1{
+    font-size: 30px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+header{
+
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(10, 100, 10);
+     width:100vw;
+}
+.colorear{
+    background-color: green;
+}
+
+.logo{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    
+}
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 10px;
+    color: whitesmoke;
+    width:100%;
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btn_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15PX;
+    width: 40%;
+    border-bottom: 2px solid white;
+}
+
+.btn_menu a{
+    color:rgb(247, 253, 247);
+    text-decoration: none;
+    
+}
+
+.menu {
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    background-color: black; 
+    margin-bottom: 6px;
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+    /* si tiene tambien la clase show */
+    ul.navigation.show {
+        display: flex;
+    }
+
+ul.navigation li {
+    list-style: none;
+    margin:0px;
+    padding:15px 20px; 
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(184, 184, 184);
+    
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li:hover {
+    background-color: rgb(0, 55, 0);
+    border-radius:10px ; 
+    box-shadow:0 5px 5px 2px rgb(247, 245, 245);
+}
+
+
+/* aca estan los estilos de la pagina principal */
+.principal{
+    display:inline-block;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+}
+
+.article{
+    display: grid;
+    margin: 20px;
+   justify-content: center;
+  
+}
+
+
+
+/* estilos de la pagina de contacto  */
+
+.formulario{
+    width:90%;
+    margin: auto;
+    background: rgba(0, 35, 0, 0.5);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(0,50,0);
+}
+.formulario h2{
+    color: white; 
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow:  0.1em 0.1em 0.2em black;
+}
+
+.formulario input,textarea{
+    background-color: rgb(0,50,0);
+    color:white; 
+    width:100%;
+    margin-bottom: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:10px ;
+    font-size: 20px;
+    text-align: center;
+}
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+
+}
+.formulario button{
+    color:white;
+    width:100%;
+    border-radius:10px;
+    background-color: rgb(0,25,0);
+    padding:20px ;
+    margin-bottom:4px ;
+    font-size:25px;
+    
+}
+.formulario button:hover{
+    cursor: pointer;
+}
+
+.anuncios{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+/* la doble linea del cuadro de la fecha*/
+#reloj{
+    width: 90%;
+    border: 10px;
+    padding: 1px;
+    height: 30%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+}
+.digital{
+    font-family: "DS-Digital"; 
+    width: 350px; 
+    background-color: black;
+    font-size:50px;
+    color: green ; 
+    text-align: center;
+   
+}
+#fecha{
+    width: 90%;
+    border: 10px;
+    padding: 1px;
+    height: 30%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+}.digitalizado{
+    font-family: "DS-Digital"; 
+    width: 350px; 
+    background-color: black;
+    font-size:25px;
+    color: green ; 
+    text-align: center;
+   
+}
+#divcarusel{              /*propiedades del div que contiene el carusel*/
+    width: 30%;
+    margin: auto;
+    width: 90%;
+    border: 10px;
+    padding: 1px;
+    height: 30%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+  }
+
+    
+
+/*  ESTILOS DE LA PAGINA DE DEPORTES, PRINCIPAL, SOCIALES*/
+
+.deportes,.sociales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 550px;
+}
+
+/*.deportes*/ article img{
+    width:70vw;
+    height:50vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+    
+     
+}
+/*.deportes*/ article p{
+    width: 70vw;
+    text-align: justify;
+    padding: 15px;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(83, 126, 83);
+}
+
+h2,h3{
+    color:rgb(10, 80, 10);
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(191, 228, 191);
+}
+.deportes table, tr, td{
+    border:2px solid rgb(0,50,0);
+}
+.deportes table{
+    background: rgba(0, 50, 0, 0.3);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width:80%;
+
+}
+ /*aca estan los estilos del footer */
+footer{
+    background-color: rgb(10, 100, 10);
+    text-align: center;
+    color: white;
+   padding: 5px;
+   margin-top: 10px;
+}
+
+footer span img{
+    max-width:20px;
+    max-height:20px;
+}
+
+
+@media screen and (min-width: 660px){
+
+    /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+       display: none;
+    }
+   
+    .principal{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        width: 1000px; ;
+    }
+    
+
+   /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        
+    }
+     ul.navigation li {
+        border-radius:0px;
+        border-bottom: 0px;
+     }
+    body{
+        padding-top: 200px;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+    header{
+        flex-direction: column;
+       position: fixed;
+       top: 0
+        
+        
+        
+    }
+    .logo{
+        display: block;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+    .indicador{
+    background-color: rgb(0, 55, 0);
+    border-radius:10px ; 
+    box-shadow:0 5px 5px 2px rgb(247, 245, 245);
+    }
+
+    /* formulario de la pagina de contacto*/
+    .formulario{
+        width:500px;
+    }  
+    
+    /* pagina de deportes */
+    .deportes, .principal,.sociales{
+        flex-direction: row;
+        margin-bottom: 10px;
+        width: 1005px;
+    
+    }
+    }
+    /*.deportes*/ article,aside{
+        flex-direction: column;
+        height: 100%;
+    }
+    /*.deportes*/ article img{
+        width:80%;
+        height:30%;
+        margin: auto;
+    }
+  
+    /*.deportes*/ article{
+        width: 70%;
+
+    } 
+    
+    /*.deportes*/ article p{
+        width: 80%;
+        margin: auto;
+    }
+    .deportes table{
+        width:80%;
+        
+    } 
+    .cont_dinamica thead th{
+        background-color: rgb(0,50,0);
+        border-radius:10px;
+        border:solid rgb(0,50,0);
+      }
+      .cont_dinamica table{
+        background: rgba(0, 35, 0, 0.5);
+        margin: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        width:80%;
+        border-radius: 10px;
+        text-align: center;
+        color:white;
+        font-size:15px ;
+        border:3px solid rgb(0,50,0);
+      
+      }
+      .cont_dinamica{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       
+      
+      }
+      button{
+        
+        padding:5px;
+        font-size: 10px;
+        background-color: rgb(0,50,0);
+        color:white;
+        border-radius: 10px;
+        justify-content: space-around;
+        
+      }
+      .botonera{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+/*.formulario*/form {
+    width:90%;
+    margin: auto;
+    background: rgba(0, 35, 0, 0.5);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(0,50,0);
+}
+/*.formulario*/form h2{
+    color: white; 
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow:  0.1em 0.1em 0.2em black;
+}
+
+/*.formulario*/ input,textarea{
+    background-color: rgb(0,50,0);
+    color:white; 
+    width:100%;
+    margin-bottom: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:10px ;
+    font-size: 20px;
+    text-align: center;
+}
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+
+}
+.formulario button{
+    color:white;
+    width:100%;
+    border-radius:10px;
+    background-color: rgb(0,25,0);
+    padding:20px ;
+    margin-bottom:4px ;
+    font-size:25px;
+    
+}
+.formulario button:hover{
+    cursor: pointer;
+}
+
+

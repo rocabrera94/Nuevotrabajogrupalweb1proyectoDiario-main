@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <title>"Diario El Nacional"</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Js/menu.js"></script>
+   
+    <script src="Js/time.js"></script>
+    <script src="Js/tabladinamica.js"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo">         
+            <img class="logo" src="img/EN mediano.jpg">      
+            <div class="encabezado">
+                <h1>Diario El Nacional</h1>
+               <div class="btn_menu"><a>menu</a></div>
+            </div>
+     </div>
+        <nav class="menu">
+          <ul class="navigation">
+               <li><a href="index.html">Principal</a></li>
+               <li><a href="deportes.html">Deportes</a></li>
+               <li class="indicador"><a href="sociales.html"><div class="colorear">Sociales</div></a></li>
+               <li><a href="contacto.html">Contacto</a></li> 
+           </ul>
+        </nav>          
+    </header>
+          <div class="sociales">
+             <article>
+                 <h2>Inscripción abierta en la Tecnicatura Universitaria de Desarrollo de Aplicaciones Informáticas</h2>     
+                 <img src="img/compu.jpg" alt="computadora">
+                 <p>Ya se encuentra disponible el acceso a la inscripcion para el ciclo lectivo 2023 de la TUDAI. La documentación a presentar es fotocopia del DNI, fotocopia certificada de nacimiento, fotocopia autenticada del título secundario o constancia de título en trámite; planilla de pre inscripción on line, la cual se puede llenar a continuacion: </p>
+                 <div class="cont_dinamica">
+                    <form action="">
+                    <h2>ingrese sus datos para registrarse</h2>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    <input type="text" name="apellido" id="apellido" placeholder="apellido">
+                    <input type="tel" neme="cel" id="cel" placeholder="celular">
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <div class="botonera">
+                        <button id="btnagregar">agregar</button>
+                        <button id="borrar_ultimo" >borrar</button>
+                        <button id="borrar_tabla" >borrar tabla</button>
+                        <button id="cargarx3" >cargarx3</button>
+                    </div>
+                    </form>
+                    <br>
+                    <table id="mytabla">
+                    <thead>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>celular</th>
+                        <th>email</th>
+                        
+                    </thead>   
+                    
+                    </table>
+                    </div>
+                
+            </article>
+            <article>
+                <h3>Ya de cara al verano vuelven los eventos y las fiestas al aire libre</h3>
+                
+                <img src="img/boutique.jpg" alt="boutique">
+                
+                <p>Actividades en la playa o la piscina, en amplios jardines o en el campo son algunas de las apuestas fuertes para esta temporada. También las actividades urbanas en terrazas de hoteles con vistas a la ciudad o en restaurantes amplios y con buena gastronomía.
+                </p> 
+        
+                <p>Por otra parte, se debe tener en cuenta que la demanda de actividades de cara a primavera y verano es bastante alta, y por ello es importante hacer una buena planificación de fechas y empezar a organizar las actividades con antelación para asegurarnos de que podemos contar con las localizaciones y los servicios que tenemos en mente.
+                </p>
+                
+            
+                <div id="reloj"class="digital" style="font-family":DS-Digital>
+                    <script>var d = new Date();             
+                   
+                    document.write("Hora:"+d.getHours(),"Minutos: "+d.getMinutes(),"Segundos: "+d.getSeconds());
+                   </script>
+                </div>  
+                
+                   <div id="fecha" class="digitalizado">
+                    <script >
+    
+                        document.write(dias_semana[fecha.getDay()] + ', ' + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear());
+                                     
+                            </script> 
+                   </div> 
+                  <img src="img/corona-beer-ice-cold.gif" alt="">
+                </article>
+          </div>
+    <footer>
+        <p>EL NACIONAL,1° DE SEPTIEMBRE AÑO 2022</p>
+        <p>Derechos reservados @ 2022</p>
+        <span>seguinos en redes sociales:</span>
+        <span><img src="img/twitter.jpg">el nacional</span>
+        <span><img src="img/facebook.png">el nacional</span>
+        <span><img src="img/instagram.png">el nacional</span>
+        
+    </footer>
+      
+    
+</body>
+</html>
